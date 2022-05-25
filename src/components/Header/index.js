@@ -21,7 +21,7 @@ export default function Header({ name, navigation }) {
                     Olá,{' '}
                    <Text style={tw`text-white text-lg font-bold`}>{name}</Text>
                 </Text>
-                <TouchableOpacity activeOpacity={0.9} style={tw`w-[44px] h-[44px] bg-white/50 justify-center items-center rounded-full`} onPress={() => navigation.navigate('Purchases')}>
+                <TouchableOpacity activeOpacity={0.9} style={tw`w-[44px] h-[44px] bg-white/50 justify-center items-center rounded-full`} onPress={() => navigation.navigate('Profile')}>
                     <Feather name="user" size={27} color="#FFF"/>
                 </TouchableOpacity>
             </View>
