@@ -1,8 +1,9 @@
 import { Text, View, FlatList } from 'react-native';
 import Balance from '../../components/Balance';
 import Header from '../../components/Header';
-import tw from 'twrnc';
 import Movements from '../../components/Movements';
+import Actions from '../../components/Actions';
+import tw from 'twrnc';
 
 const fake_purchases = [
     {
@@ -53,8 +54,9 @@ export default function Home({ navigation }) {
     return (
         <View style={tw`bg-gray-100/50`}>
             <Header name="Lucas" navigation={navigation}/>
-            <Balance balance="17.982,32" expenses="-7.152,48"/>
-            <Text style={tw`text-lg font-bold ml-[14px] mr-[14px] mt-[14px] mb-[6px]`}>Últimas movimentações</Text>
+            <Balance balance="37.982,32" expenses="-7.152,48"/>
+            <Actions />
+            <Text style={tw`text-lg font-bold m-[14px]`}>Últimas movimentações</Text>
             <FlatList
                 style={tw`mr-[14px] ml-[14px]`}
                 data={fake_purchases}

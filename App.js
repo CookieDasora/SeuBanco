@@ -1,3 +1,4 @@
+import 'react-native-reanimated';
 import Home from './src/pages/Home/index';
 import Profile from './src/pages/Profile/index';
 import 'react-native-gesture-handler';
