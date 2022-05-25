@@ -49,10 +49,10 @@ const fake_purchases = [
     }
 ]
 
-export default function Home() {
+export default function Home({ navigation }) {
     return (
         <View style={tw`bg-gray-100/50`}>
-            <Header name="Lucas"/>
+            <Header name="Lucas" navigation={navigation}/>
             <Balance balance="17.982,32" expenses="-7.152,48"/>
             <Text style={tw`text-lg font-bold ml-[14px] mr-[14px] mt-[14px] mb-[6px]`}>Últimas movimentações</Text>
             <FlatList
